@@ -120,6 +120,7 @@ img {
 @media (max-width: 768px) {
     .hero img { content: url('img/Mobile/HERO.png'); }
     .reviews img { content: url('img/Mobile/REVIEWS.png'); }
+    .pack img { content: url('img/Mobile/PACK.png'); }
     .delivery img { content: url('img/Mobile/DELIVERY.png'); }
     .gallery img { content: url('img/Mobile/GALLERY.png'); }
     .footer img { content: url('img/Mobile/FOOTER.png'); }

@@ -87,6 +87,10 @@
             });
             
             if (response.ok) {
+                fbq('track', 'Purchase', {
+                    value: 319,
+                    currency: 'MAD'
+                });
                 alert('Commande envoyée avec succès!');
                 this.reset();
             } else {

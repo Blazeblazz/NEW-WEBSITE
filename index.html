@@ -34,12 +34,12 @@
     </section>
     
     <section class="order-form">
-        <form>
+        <form id="orderForm">
             <h2>Passez votre commande</h2>
             <div class="price">319 Dh - Livraison gratuite</div>
-            <input type="text" placeholder="NOM" required>
-            <input type="text" placeholder="VILLE" required>
-            <input type="tel" placeholder="NUMERO DE TELEPHONE" required>
+            <input type="text" name="nom" placeholder="NOM" required>
+            <input type="text" name="ville" placeholder="VILLE" required>
+            <input type="tel" name="telephone" placeholder="NUMERO DE TELEPHONE" required>
             <button type="submit">Commander maintenant</button>
         </form>
     </section>
@@ -63,5 +63,39 @@
     <div class="sticky-order">
         <button onclick="document.querySelector('.order-form').scrollIntoView({behavior: 'smooth'})">Commander maintenant</button>
     </div>
+    
+    <script>
+    document.getElementById('orderForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = {
+            nom: this.nom.value,
+            ville: this.ville.value,
+            telephone: this.telephone.value,
+            date: new Date().toISOString(),
+            prix: '319 Dh'
+        };
+        
+        try {
+            const response = await fetch('https://api.jsonbin.io/v3/b/6887954ff7e7a370d1ef4e26', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Master-Key': '$2a$10$W7Y1w05rI7FhqCSUCB/tRuDJYO2fRlTwgv2s3je3OlExS3oOz9UzG'
+                },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                alert('Commande envoyée avec succès!');
+                this.reset();
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+            }
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez réessayer.');
+        }
+    });
+    </script>
 </body>
 </html>

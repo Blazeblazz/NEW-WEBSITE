@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <img src="img/HERO.png" alt="Hero Section">
+        <button class="hero-order-btn" onclick="document.querySelector('.order-form').scrollIntoView({behavior: 'smooth'})">Commander maintenant</button>
+    </section>
+    
+    <section class="reviews">
+        <img src="img/REVIEWS.png" alt="Reviews Section">
+    </section>
+    
+    <section class="order-form">
+        <form>
+            <h2>Passez votre commande</h2>
+            <div class="price">319 Dh - Livraison gratuite</div>
+            <input type="text" placeholder="NOM" required>
+            <input type="text" placeholder="VILLE" required>
+            <input type="tel" placeholder="NUMERO DE TELEPHONE" required>
+            <button type="submit">Commander maintenant</button>
+        </form>
+    </section>
+    
+    <section class="delivery">
+        <img src="img/DELIVERY.png" alt="Delivery Section">
+    </section>
+    
+    <section class="gallery">
+        <img src="img/GALLERY.png" alt="Gallery Section">
+    </section>
+    
+    <footer class="footer">
+        <img src="img/FOOTER.png" alt="Footer Section">
+    </footer>
+    
+    <div class="sticky-order">
+        <button onclick="document.querySelector('.order-form').scrollIntoView({behavior: 'smooth'})">Commander maintenant</button>
+    </div>
+</body>
+</html>

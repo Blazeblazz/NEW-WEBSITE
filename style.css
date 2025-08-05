@@ -125,6 +125,7 @@ img {
     .product img { content: url('img/Mobile Version/PRODUCT.webp'); }
     .delivery img { content: url('img/Mobile Version/DELIVERY.webp'); }
     .footer img { content: url('img/Mobile Version/FOOTER.webp'); }
+    .thank-you img { content: url('img/Mobile Version/THANK.webp'); }
     
     .sticky-order {
         display: block;

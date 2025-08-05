@@ -23,8 +23,8 @@ section, footer {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 18px 30px;
-    background: #c20011;
+    padding: 18px 60px;
+    background: #231d60;
     color: white;
     border: none;
     border-radius: 25px;
@@ -35,6 +35,8 @@ section, footer {
     letter-spacing: 1px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     z-index: 10;
+    white-space: nowrap;
+    min-width: 300px;
 }
 
 img {
@@ -69,13 +71,13 @@ img {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
-    color: #c20011;
+    color: #231d60;
     margin-bottom: 20px;
     background: white;
     padding: 15px 25px;
     border-radius: 15px;
-    border: 3px solid #c20011;
-    box-shadow: 0 4px 15px rgba(194, 0, 17, 0.3);
+    border: 3px solid #231d60;
+    box-shadow: 0 4px 15px rgba(35, 29, 96, 0.3);
 }
 
 .order-form input {
@@ -95,7 +97,7 @@ img {
 
 .order-form button {
     padding: 18px;
-    background: #c20011;
+    background: #231d60;
     color: white;
     border: none;
     border-radius: 25px;
@@ -118,12 +120,11 @@ img {
 }
 
 @media (max-width: 768px) {
-    .hero img { content: url('img/Mobile/HERO.png'); }
-    .reviews img { content: url('img/Mobile/REVIEWS.png'); }
-    .pack img { content: url('img/Mobile/PACK.png') !important; }
-    .delivery img { content: url('img/Mobile/DELIVERY.png'); }
-    .gallery img { content: url('img/Mobile/GALLERY.png'); }
-    .footer img { content: url('img/Mobile/FOOTER.png'); }
+    .hero img { content: url('img/Mobile Version/HERO.png'); }
+    .reviews img { content: url('img/Mobile Version/REVIEWS.png'); }
+    .product img { content: url('img/Mobile Version/PRODUCT.png'); }
+    .delivery img { content: url('img/Mobile Version/DELIVERY.png'); }
+    .footer img { content: url('img/Mobile Version/FOOTER.png'); }
     
     .sticky-order {
         display: block;
@@ -140,7 +141,7 @@ img {
     .sticky-order button {
         width: 100%;
         padding: 18px;
-        background: #c20011;
+        background: #231d60;
         color: white;
         border: none;
         border-radius: 25px;

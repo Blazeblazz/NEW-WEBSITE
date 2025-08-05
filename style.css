@@ -120,11 +120,11 @@ img {
 }
 
 @media (max-width: 768px) {
-    .hero img { content: url('img/Mobile Version/HERO.png'); }
-    .reviews img { content: url('img/Mobile Version/REVIEWS.png'); }
-    .product img { content: url('img/Mobile Version/PRODUCT.png'); }
-    .delivery img { content: url('img/Mobile Version/DELIVERY.png'); }
-    .footer img { content: url('img/Mobile Version/FOOTER.png'); }
+    .hero img { content: url('img/Mobile Version/HERO.webp'); }
+    .reviews img { content: url('img/Mobile Version/REVIEWS.webp'); }
+    .product img { content: url('img/Mobile Version/PRODUCT.webp'); }
+    .delivery img { content: url('img/Mobile Version/DELIVERY.webp'); }
+    .footer img { content: url('img/Mobile Version/FOOTER.webp'); }
     
     .sticky-order {
         display: block;
